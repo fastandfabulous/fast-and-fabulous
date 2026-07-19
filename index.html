@@ -78,24 +78,10 @@
     .topbar {
       position:absolute;
       inset:24px 24px auto 24px;
-      display:flex;
-      align-items:flex-start;
-      justify-content:space-between;
-      gap:20px;
       z-index:2;
     }
 
     
-
-    .top-meta {
-      text-align:right;
-      font-size:.72rem;
-      font-weight:900;
-      letter-spacing:.17em;
-      line-height:1.65;
-      text-transform:uppercase;
-      color:#d8d8d8;
-    }
 
     .hero-copy {
       position:absolute;
@@ -115,7 +101,7 @@
     h1 {
       margin:0;
       color:var(--pink);
-      font-size:clamp(4rem,15vw,9rem);
+      font-size:clamp(4.4rem,16vw,10rem);
       line-height:.8;
       letter-spacing:-.075em;
       font-style:italic;
@@ -424,7 +410,11 @@
     @media(min-width:720px) {
       .shell { padding:28px; }
       .hero-copy { left:52px; right:52px; bottom:52px; }
-      .topbar { inset:32px 36px auto 36px; }
+      .topbar {
+      position:absolute;
+      inset:24px 24px auto 24px;
+      z-index:2;
+    }
       .logo-card { width:160px; }
       .stats { grid-template-columns:repeat(4,1fr); }
       .section-inner { padding:54px 46px; }
@@ -442,12 +432,7 @@
   <main class="shell">
     <section class="hero">
       <div class="topbar">
-<div class="top-meta">
-          Hamburg<br>
-          Social Running<br>
-          Queer Community
-        </div>
-      </div>
+</div>
 
       <div class="hero-copy">
         <p class="eyebrow">Hamburg · First social run club for unicorns</p>
